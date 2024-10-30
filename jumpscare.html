@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidéo Jumpscare</title>
+    <style>
+        #jumpscareVideo {
+            display: none;
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cliquez sur le lien pour voir la vidéo !</h1>
+    <a href="#" id="playVideo">Clique ici pour lancer la vidéo</a>
+    <iframe id="jumpscareVideo" src="" frameborder="0" allowfullscreen></iframe>
+
+    <script>
+        document.getElementById('playVideo').onclick = function(event) {
+            event.preventDefault(); // Empêche le lien de suivre l'URL
+            const video = document.getElementById('OnlyFans');
+            video.src = "https://www.youtube.com/embed/ekFLaTC0D5c?autoplay=1"; // Lien d'intégration de la vidéo
+            video.style.display = 'block'; // Affiche l'iframe
+        };
+    </script>
+</body>
+</html>
